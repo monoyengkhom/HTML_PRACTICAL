@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+    <header>
+        <h1>Subcribe to XYZ News Magazine and Emails</h1>
+        <p>
+            Interested in receiving daily updates of all latest News? Well, now you can. And best of all, it is free! Just fill out this form and submit it by clicking the "send it In" button. We will put you on mailing list and you will receive your first email in 3-5 days.
+        </p>
+    </header>
+    <hr>
+    <p>Please fill the following boxes to help us send the emails and our news letter.</p>
+
+    <form action="index.php" method="post">
+      <div class="wrapper">
+        <div class="first_name">
+            <label for="username">First Name: </label>
+            <input
+              type="text"
+              id="firstname"
+              name="username"
+              placeholder="First Name"
+            />
+          </div>
+          <div class="last_name">
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name">
+          </div>
+          <div class="profession">
+            <label for="profession">Buisness: </label>
+            <input type="text" id="profession" placeholder="Buisness">
+          </div>
+          <div>
+            We must have a correct e-mail address to send you the news letter. <br>
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="e-mail-add" placeholder="Email" required>
+          </div>
+          <div>
+            How did you hear about XYZ New Magazine and Emails?
+            <br>
+            <input type="radio" name="source" id="web">
+            <label for="web">Here on the Web</label>
+            <input type="radio" name="source" id="Magazine">
+            <label for="Magazine">In a Magazine</label>
+            <input type="radio" name="source" id="tv">
+            <label for="tv">Television</label>
+            <input type="radio" name="source" id="other">
+            <label for="other">Other</label>
+          </div>
+          <div>
+            Would you like to be on our regular mailing list?
+            <br>
+            <input type="checkbox" id="junk_mail">
+            <label for="junk_mail">Yes, we love junk emails</label>
+          </div>
+          <hr>
+        <div class="subcribe_button">
+            <input type="submit" name="subcribe" value="Subcribe">
+            <input type="reset">
+        </div>
+    </div>
+
+    </form>
+
+
+</body>
+</html>
